@@ -14,21 +14,21 @@ a { text-decoration: none; }
 
 .container { padding: 0 20px 0px 20px; }
 
-.header { position: fixed; width: 100%; top: 0; left: 0; z-index: 103; }
+.header { position: fixed; width: 100%; top: 0; left: 0; z-index: 3; }
 .header__inner { position: relative; display: flex; justify-content: space-between; align-items: center; }
 
 .header:before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; }
 
 .header__list { display: flex; align-items: center; position: relative; z-index: 2; }
 .header__list li .header__link { font-family: "Source Sans Pro"; font-style: normal; font-weight: 400; font-size: 18px; line-height: 20px; letter-spacing: 1px; color: #ffffff; margin-right: 36px; }
-.header__list li button { font-family: "Paytone One"; font-style: normal; font-weight: 400; font-size: 18px; line-height: 20px; text-align: center; letter-spacing: 1px; color: #ffffff; background: #d400b3; border: 2px solid #d400b3; border-radius: 1px; padding-top: 7px; padding-bottom: 7px; width: 214px; margin-left: 100px; z-index: 103; position: relative; }
+.header__list li button { font-family: "Paytone One"; font-style: normal; font-weight: 400; font-size: 18px; line-height: 20px; text-align: center; letter-spacing: 1px; color: #ffffff; background: #d400b3; border: 2px solid #d400b3; border-radius: 1px; padding-top: 7px; padding-bottom: 7px; width: 214px; margin-left: 100px; z-index: 3; position: relative; }
 
 .logo { position: relative; z-index: 3; }
 
 .header__burger { display: none; }
 
 @media (max-width: 1440px) { .container { margin-left: calc(30px + (120 - 30) * ((100vw - 760px) / (1440 - 760))); margin-right: calc(30px + (120 - 30) * ((100vw - 760px) / (1440 - 760))); }
-  .header__list li button { margin-left: calc(20px + (480 - 20) * ((100vw - 760px) / (1440 - 760))); z-index: 103; } }
+  .header__list li button { margin-left: calc(20px + (480 - 20) * ((100vw - 760px) / (1440 - 760))); } }
 @media (max-width: 767px) { body.lock { overflow: hidden; }
   .container { margin-left: calc(12px + (30 - 12) * ((100vw - 320px) / (767 - 320))); margin-right: calc(12px + (30 - 12) * ((100vw - 320px) / (767 - 320))); }
   .header__list li button { margin-left: 0px; }
@@ -53,11 +53,11 @@ a { text-decoration: none; }
 .page { flex: 1 1 auto; }
 .page .page__main-block { display: flex; background-color: #0D0D0E; }
 .page .page__main-block .main-block__container .main-block__body { margin: calc(64px + (123 - 64) * ((100vw - 320px) / (1440 - 320))) calc(24px + (0 - 24) * ((100vw - 320px) / (1440 - 320))) calc(24px + (99 - 24) * ((100vw - 320px) / (1440 - 320))) calc(24px + (120 - 24) * ((100vw - 320px) / (1440 - 320))); }
-.page .page__main-block .main-block__container .main-block__body h1 { font-family: "Paytone One"; font-style: normal; font-weight: 400; font-size: calc(36px + (84 - 36) * ((100vw - 320px) / (1440 - 320))); line-height: calc(60px + (100 - 60) * ((100vw - 320px) / (1440 - 320))); letter-spacing: 1px; color: #ffffff; position: absolute; z-index: 150; }
-.page .page__main-block .main-block__container .main-block__body .main-block__text { font-family: "Source Sans Pro"; font-style: normal; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 1px; color: #e5e5e5; width: calc(280px + (640 - 280) * ((100vw - 320px) / (1440 - 320))); padding-top: calc(224px + (325 - 224) * ((100vw - 320px) / (1440 - 320))); z-index: 150; position: relative; }
-.page .page__main-block .main-block__img { width: calc(320px + (792 - 320) * ((100vw - 320px) / (1440 - 320))); z-index: 2; }
+.page .page__main-block .main-block__container .main-block__body h1 { font-family: "Paytone One"; font-style: normal; font-weight: 400; font-size: calc(36px + (84 - 36) * ((100vw - 320px) / (1440 - 320))); line-height: calc(60px + (100 - 60) * ((100vw - 320px) / (1440 - 320))); letter-spacing: 1px; color: #ffffff; position: absolute; z-index: 2; }
+.page .page__main-block .main-block__container .main-block__body .main-block__text { font-family: "Source Sans Pro"; font-style: normal; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 1px; color: #e5e5e5; width: calc(280px + (640 - 280) * ((100vw - 320px) / (1440 - 320))); padding-top: calc(224px + (325 - 224) * ((100vw - 320px) / (1440 - 320))); z-index: 2; position: relative; }
+.page .page__main-block .main-block__img { width: calc(320px + (792 - 320) * ((100vw - 320px) / (1440 - 320))); z-index: 1; }
 .page .page__main-block .main-block__img .circle { width: calc(320px + (792 - 320) * ((100vw - 320px) / (1440 - 320))); position: absolute; right: 0px; }
-.page .page__main-block .main-block__img .view { position: absolute; top: calc(190px + (478 - 190) * ((100vw - 320px) / (1440 - 320))); right: calc(0px + (512 - 0) * ((100vw - 320px) / (1440 - 320))); width: calc(60px + (150 - 60) * ((100vw - 320px) / (1440 - 320))); z-index: 2; }
+.page .page__main-block .main-block__img .view { position: absolute; top: calc(190px + (478 - 190) * ((100vw - 320px) / (1440 - 320))); right: calc(0px + (512 - 0) * ((100vw - 320px) / (1440 - 320))); width: calc(60px + (150 - 60) * ((100vw - 320px) / (1440 - 320))); z-index: 1; }
 .page .page__main-block .main-block__img .square1 { width: calc(60px + (145 - 60) * ((100vw - 320px) / (1440 - 320))); height: calc(60px + (160 - 60) * ((100vw - 320px) / (1440 - 320))); background-color: #000; position: absolute; top: calc(190px + (353 - 190) * ((100vw - 320px) / (1440 - 320))); right: calc(0px + (648 - 0) * ((100vw - 320px) / (1440 - 320))); }
 .page .page__main-block .main-block__img .square2 { width: calc(60px + (145 - 60) * ((100vw - 320px) / (1440 - 320))); height: calc(60px + (175 - 60) * ((100vw - 320px) / (1440 - 320))); background-color: #0D0D0E; position: absolute; top: calc(220px + (513 - 220) * ((100vw - 320px) / (1440 - 320))); right: calc(320px + (648 - 320) * ((100vw - 320px) / (1440 - 320))); }
 .page .page__main-block .main-block__img .square3 { height: 64px; width: calc(320px + (740 - 320) * ((100vw - 320px) / (1440 - 320))); background-color: #0D0D0E; position: absolute; top: calc(277px + (687 - 277) * ((100vw - 320px) / (1440 - 320))); right: calc(0px + (0 - 0) * ((100vw - 320px) / (1440 - 320))); }
