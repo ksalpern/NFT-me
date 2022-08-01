@@ -388,7 +388,7 @@ a {
     }
     .achievement__container {
       display: flex;
-      gap: 76px;
+      gap: calc(30px + (76 - 30) * ((100vw - 320px) / (1440 - 320)));
       .achievement {
         h3 {
           font-family: "Paytone One";
