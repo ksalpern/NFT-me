@@ -53,13 +53,38 @@ a { text-decoration: none; }
 .page { flex: 1 1 auto; }
 .page .page__main-block { display: flex; background-color: #0D0D0E; }
 .page .page__main-block .main-block__container .main-block__body { margin: calc(64px + (123 - 64) * ((100vw - 320px) / (1440 - 320))) calc(24px + (0 - 24) * ((100vw - 320px) / (1440 - 320))) calc(24px + (99 - 24) * ((100vw - 320px) / (1440 - 320))) calc(24px + (120 - 24) * ((100vw - 320px) / (1440 - 320))); }
-.page .page__main-block .main-block__container .main-block__body h1 { font-family: "Paytone One"; font-style: normal; font-weight: 400; font-size: calc(36px + (84 - 36) * ((100vw - 320px) / (1440 - 320))); line-height: calc(60px + (100 - 60) * ((100vw - 320px) / (1440 - 320))); letter-spacing: 1px; color: #ffffff; position: absolute; z-index: 2; }
-.page .page__main-block .main-block__container .main-block__body .main-block__text { font-family: "Source Sans Pro"; font-style: normal; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 1px; color: #e5e5e5; width: calc(280px + (640 - 280) * ((100vw - 320px) / (1440 - 320))); padding-top: calc(224px + (325 - 224) * ((100vw - 320px) / (1440 - 320))); z-index: 2; position: relative; }
+.page .page__main-block .main-block__container .main-block__body h1 { font-family: "Paytone One"; font-style: normal; font-weight: 400; font-size: calc(36px + (84 - 36) * ((100vw - 320px) / (1440 - 320))); line-height: calc( 60px + (100 - 60) * ((100vw - 320px) / (1440 - 320)) ); letter-spacing: 1px; color: #ffffff; position: absolute; z-index: 2; }
+.page .page__main-block .main-block__container .main-block__body .main-block__text { font-family: "Source Sans Pro"; font-style: normal; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 1px; color: #e5e5e5; width: calc(280px + (640 - 280) * ((100vw - 320px) / (1440 - 320))); padding-top: calc( 224px + (325 - 224) * ((100vw - 320px) / (1440 - 320)) ); z-index: 2; position: relative; }
 .page .page__main-block .main-block__img { width: calc(320px + (792 - 320) * ((100vw - 320px) / (1440 - 320))); z-index: 1; }
 .page .page__main-block .main-block__img .circle { width: calc(320px + (792 - 320) * ((100vw - 320px) / (1440 - 320))); position: absolute; right: 0px; }
 .page .page__main-block .main-block__img .view { position: absolute; top: calc(190px + (478 - 190) * ((100vw - 320px) / (1440 - 320))); right: calc(0px + (512 - 0) * ((100vw - 320px) / (1440 - 320))); width: calc(60px + (150 - 60) * ((100vw - 320px) / (1440 - 320))); z-index: 1; }
 .page .page__main-block .main-block__img .square1 { width: calc(60px + (145 - 60) * ((100vw - 320px) / (1440 - 320))); height: calc(60px + (160 - 60) * ((100vw - 320px) / (1440 - 320))); background-color: #000; position: absolute; top: calc(190px + (353 - 190) * ((100vw - 320px) / (1440 - 320))); right: calc(0px + (648 - 0) * ((100vw - 320px) / (1440 - 320))); }
 .page .page__main-block .main-block__img .square2 { width: calc(60px + (145 - 60) * ((100vw - 320px) / (1440 - 320))); height: calc(60px + (175 - 60) * ((100vw - 320px) / (1440 - 320))); background-color: #0D0D0E; position: absolute; top: calc(220px + (513 - 220) * ((100vw - 320px) / (1440 - 320))); right: calc(320px + (648 - 320) * ((100vw - 320px) / (1440 - 320))); }
 .page .page__main-block .main-block__img .square3 { height: 64px; width: calc(320px + (740 - 320) * ((100vw - 320px) / (1440 - 320))); background-color: #0D0D0E; position: absolute; top: calc(277px + (687 - 277) * ((100vw - 320px) / (1440 - 320))); right: calc(0px + (0 - 0) * ((100vw - 320px) / (1440 - 320))); }
+
+.more { background-color: #262627; padding: 42px 155px 238px calc(30px + (120 - 30) * ((100vw - 320px) / (1440 - 320))); }
+.more .watch-video { display: flex; align-items: center; margin-bottom: calc(54px + (203 - 54) * ((100vw - 1024px) / (1440 - 1024))); }
+.more .watch-video p { font-family: "Paytone One"; font-style: normal; font-weight: 400; font-size: 32px; line-height: 44px; letter-spacing: 1px; color: #ffffff; }
+.more .watch-video a { background: #ffffff; padding: 14px; margin-left: 30px; }
+.more .watch-video a img { display: flex; align-items: center; }
+.more .achievements { display: flex; justify-content: space-between; }
+.more .achievements .achievement__text { font-family: "Source Sans Pro"; font-style: normal; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 1px; color: #e5e5e5; width: 448px; }
+.more .achievements .achievement__container { display: flex; gap: 76px; }
+.more .achievements .achievement__container .achievement h3 { font-family: "Paytone One"; font-style: normal; font-weight: 400; font-size: calc(24px + (56 - 24) * ((100vw - 320px) / (1440 - 320))); line-height: 56px; text-align: center; letter-spacing: 1px; color: #ffffff; }
+.more .achievements .achievement__container .achievement p { font-family: "Source Sans Pro"; font-style: normal; font-weight: 400; font-size: 16px; line-height: 20px; text-align: center; letter-spacing: 1px; color: #ffffff; margin-top: 11px; }
+
+@media (max-width: 1439px) { .more { margin-top: -1px; } }
+@media (max-width: 1024px) { .more { background-color: #262627; padding: calc(80px + (42 - 80) * ((100vw - 320px) / (1024 - 320))) calc(30px + (120 - 30) * ((100vw - 320px) / (1440 - 320))) calc(80px + (238 - 80) * ((100vw - 320px) / (1024 - 320))) calc(30px + (120 - 30) * ((100vw - 320px) / (1440 - 320))); }
+  .more .watch-video { display: flex; align-items: center; margin-bottom: calc(30px + (45- 30) * ((100vw - 320px) / (1024 - 320))); }
+  .more .watch-video p { font-family: "Paytone One"; font-style: normal; font-weight: 400; font-size: 32px; line-height: 44px; letter-spacing: 1px; color: #ffffff; }
+  .more .watch-video a { background: #ffffff; padding: 14px; margin-left: 30px; }
+  .more .watch-video a img { display: flex; align-items: center; }
+  .more .achievements { display: flex; flex-direction: column; margin-top: calc(204px + (64 - 204) * ((100vw - 320px) / (1024 - 320))); }
+  .more .achievements .achievement__text { font-family: "Source Sans Pro"; font-style: normal; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 1px; color: #e5e5e5; width: calc(270px + (860 - 270) * ((100vw - 320px) / (1024 - 320))); margin-bottom: calc( 10px + (20 - 10) * ((100vw - 320px) / (1024 - 320)) ); }
+  .more .achievements .achievement__container { display: flex; justify-content: space-between; }
+  .more .achievements .achievement__container .achievement h3 { font-family: "Paytone One"; font-style: normal; font-weight: 400; font-size: calc( 36px + (56 - 36) * ((100vw - 320px) / (1024 - 320)) ); line-height: 56px; text-align: center; letter-spacing: 1px; color: #ffffff; }
+  .more .achievements .achievement__container .achievement p { font-family: "Source Sans Pro"; font-style: normal; font-weight: 400; font-size: 16px; line-height: 20px; text-align: center; letter-spacing: 1px; color: #ffffff; margin-top: 11px; } }
+@media (max-width: 425px) { .more { padding-top: calc(10px + (20 - 10) * ((100vw - 320px) / (425 - 320))); }
+  .more .achievements .achievement__container { flex-wrap: wrap; } }
 
 /*# sourceMappingURL=style.css.map */
