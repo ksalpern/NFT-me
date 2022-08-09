@@ -574,7 +574,7 @@ a {
   }
 
   .img-3 {
-    margin-left:  calc(0px + (40 - 0) * ((100vw - 320px) / (1340 - 320)));
+    margin-left: calc(0px + (40 - 0) * ((100vw - 320px) / (1340 - 320)));
     margin-top: 40px;
     margin-right: 0;
   }
@@ -584,7 +584,7 @@ a {
   }
 
   .img-5 {
-    margin-left:  calc(0px + (40 - 0) * ((100vw - 320px) / (1340 - 320)));
+    margin-left: calc(0px + (40 - 0) * ((100vw - 320px) / (1340 - 320)));
     margin-top: 40px;
     margin-right: 0;
   }
@@ -595,7 +595,7 @@ a {
     width: calc(200px + (300 - 200) * ((100vw - 320px) / (978 - 320)));
   }
   .img-2 {
-    margin-top:  calc(20px + (40 - 20) * ((100vw - 320px) / (978 - 320)));
+    margin-top: calc(20px + (40 - 20) * ((100vw - 320px) / (978 - 320)));
     width: calc(290px + (400 - 290) * ((100vw - 320px) / (978 - 320)));
   }
   .img-3 {
@@ -603,7 +603,7 @@ a {
   }
   .img-4 {
     width: calc(300px + (400 - 300) * ((100vw - 320px) / (978 - 320)));
-    margin-left:  calc(-10px + (10 - (-10)) * ((100vw - 320px) / (978 - 320)));
+    margin-left: calc(-10px + (10 - (-10)) * ((100vw - 320px) / (978 - 320)));
   }
   .img-5 {
     width: calc(290px + (400 - 290) * ((100vw - 320px) / (978 - 320)));
@@ -614,7 +614,75 @@ a {
   }
 }
 
-@media (max-width: 653px) {
+// sell section
+
+.sell {
+  margin-top: -1px;
+  background-color: $blackBG;
+  padding: 175px 112px 185px 112px;
+  &__header {
+    font-family: "Paytone One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 64px;
+    /* identical to box height, or 123% */
+    text-align: center;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-bottom: 51px;
+  }
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.sell__card {
+  max-width: 392px;
+  max-height: 275px;
+  background: #262627;
+  border: 1px solid rgba(229, 229, 229, 0.5);
+  border-radius: 2px;
+}
+
+.card__imgs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.card__img {
+  padding-left: 17px;
+  padding-top: 36px;
+}
+
+.card__header {
+  font-family: "Paytone One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin-left: 17px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card__description {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  color: #e5e5e5;
+  margin-bottom: 58px;
+  margin-top: 11px;
+  margin-left: 17px;
 }
 
 // footer
