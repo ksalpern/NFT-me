@@ -90,7 +90,7 @@ a { text-decoration: none; }
 .popular .popular__top { display: flex; justify-content: space-between; flex-wrap: wrap; }
 .popular .popular__bottom { display: flex; justify-content: space-between; flex-wrap: wrap; }
 
-.img-left-margin { margin-left: 24px; }
+.img-left-margin { margin-left: 24px; margin-bottom: 16px; }
 
 .img-right-margin { margin-right: 24px; }
 
@@ -108,14 +108,18 @@ a { text-decoration: none; }
 .sell__header { font-family: "Paytone One"; font-style: normal; font-weight: 400; font-size: 52px; line-height: 64px; /* identical to box height, or 123% */ text-align: center; letter-spacing: 1px; color: #ffffff; margin-bottom: 51px; }
 .sell__cards { display: flex; justify-content: space-between; flex-wrap: wrap; }
 
-.sell__card { max-width: 392px; max-height: 275px; background: #262627; border: 1px solid rgba(229, 229, 229, 0.5); border-radius: 2px; }
+.sell__card { max-width: 392px; max-height: 275px; background: #262627; border: 1px solid rgba(229, 229, 229, 0.5); border-radius: 2px; margin: 0 8px 16px 8px; }
 
-.card__imgs { display: flex; justify-content: space-between; margin-bottom: 25px; }
+.card__imgs { display: flex; justify-content: space-between; margin-bottom: calc(12px + (25 - 12) * ((100vw - 320px) / (1440 - 320))); }
 
 .card__img { padding-left: 17px; padding-top: 36px; }
 
-.card__header { font-family: "Paytone One"; font-style: normal; font-weight: 400; font-size: 23px; line-height: 32px; text-align: center; letter-spacing: 1px; color: #ffffff; margin-left: 17px; display: flex; justify-content: flex-start; }
+.card__header { font-family: "Paytone One"; font-style: normal; font-weight: 400; font-size: 23px; line-height: 32px; text-align: center; letter-spacing: 1px; color: #ffffff; margin: 0 6px 0 17px; display: flex; justify-content: flex-start; }
 
-.card__description { font-family: "Source Sans Pro"; font-style: normal; font-weight: 400; font-size: 16px; line-height: 26px; letter-spacing: 1px; color: #e5e5e5; margin-bottom: 58px; margin-top: 11px; margin-left: 17px; }
+.card__description { font-family: "Source Sans Pro"; font-style: normal; font-weight: 400; font-size: 16px; line-height: 26px; letter-spacing: 1px; color: #e5e5e5; margin: 11px 6px calc(8px + (58 - 8) * ((100vw - 320px) / (1440 - 320))) 17px; }
+
+@media (max-width: 1388px) { .sell { padding: calc(100px + (175 - 100) * ((100vw - 320px) / (1388 - 320))) calc(40px + (112 - 40) * ((100vw - 320px) / (1388 - 320))) calc(60px + (185 - 60) * ((100vw - 320px) / (1388 - 320))) calc(40px + (112 - 40) * ((100vw - 320px) / (1388 - 320))); }
+  .sell__cards { flex-direction: column; }
+  .sell__card { max-width: 100%; padding-bottom: calc(28px + (4 - 28) * ((100vw - 320px) / (1388 - 320))); } }
 
 /*# sourceMappingURL=style.css.map */
