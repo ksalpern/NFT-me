@@ -53,8 +53,8 @@ a { text-decoration: none; }
 .page { flex: 1 1 auto; }
 .page .page__main-block { display: flex; background-color: #0D0D0E; }
 .page .page__main-block .main-block__container .main-block__body { margin: calc(64px + (123 - 64) * ((100vw - 320px) / (1440 - 320))) calc(24px + (0 - 24) * ((100vw - 320px) / (1440 - 320))) calc(24px + (99 - 24) * ((100vw - 320px) / (1440 - 320))) calc(24px + (120 - 24) * ((100vw - 320px) / (1440 - 320))); }
-.page .page__main-block .main-block__container .main-block__body h1 { font-family: "Paytone One"; font-style: normal; font-weight: 400; font-size: calc(36px + (84 - 36) * ((100vw - 320px) / (1440 - 320))); line-height: calc( 60px + (100 - 60) * ((100vw - 320px) / (1440 - 320)) ); letter-spacing: 1px; color: #ffffff; position: absolute; z-index: 2; }
-.page .page__main-block .main-block__container .main-block__body .main-block__text { font-family: "Source Sans Pro"; font-style: normal; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 1px; color: #e5e5e5; width: calc(280px + (640 - 280) * ((100vw - 320px) / (1440 - 320))); padding-top: calc( 224px + (325 - 224) * ((100vw - 320px) / (1440 - 320)) ); z-index: 2; position: relative; }
+.page .page__main-block .main-block__container .main-block__body h1 { font-family: "Paytone One"; font-style: normal; font-weight: 400; font-size: calc(36px + (84 - 36) * ((100vw - 320px) / (1440 - 320))); line-height: calc(60px + (100 - 60) * ((100vw - 320px) / (1440 - 320))); letter-spacing: 1px; color: #ffffff; position: absolute; z-index: 2; }
+.page .page__main-block .main-block__container .main-block__body .main-block__text { font-family: "Source Sans Pro"; font-style: normal; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 1px; color: #e5e5e5; width: calc(280px + (640 - 280) * ((100vw - 320px) / (1440 - 320))); padding-top: calc(224px + (325 - 224) * ((100vw - 320px) / (1440 - 320))); z-index: 2; position: relative; }
 .page .page__main-block .main-block__img { width: calc(320px + (792 - 320) * ((100vw - 320px) / (1440 - 320))); z-index: 1; }
 .page .page__main-block .main-block__img .circle { width: calc(320px + (792 - 320) * ((100vw - 320px) / (1440 - 320))); position: absolute; right: 0px; }
 .page .page__main-block .main-block__img .view { position: absolute; top: calc(190px + (478 - 190) * ((100vw - 320px) / (1440 - 320))); right: calc(0px + (512 - 0) * ((100vw - 320px) / (1440 - 320))); width: calc(60px + (150 - 60) * ((100vw - 320px) / (1440 - 320))); z-index: 1; }
@@ -80,9 +80,9 @@ a { text-decoration: none; }
   .more .watch-video a { background: #ffffff; padding: 14px; margin-left: 30px; }
   .more .watch-video a img { display: flex; align-items: center; }
   .more .achievements { display: flex; flex-direction: column; margin-top: calc(204px + (64 - 204) * ((100vw - 320px) / (1024 - 320))); }
-  .more .achievements .achievement__text { font-family: "Source Sans Pro"; font-style: normal; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 1px; color: #e5e5e5; width: calc(270px + (860 - 270) * ((100vw - 320px) / (1024 - 320))); margin-bottom: calc( 10px + (20 - 10) * ((100vw - 320px) / (1024 - 320)) ); }
+  .more .achievements .achievement__text { font-family: "Source Sans Pro"; font-style: normal; font-weight: 400; font-size: 20px; line-height: 32px; letter-spacing: 1px; color: #e5e5e5; width: calc(270px + (860 - 270) * ((100vw - 320px) / (1024 - 320))); margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1024 - 320))); }
   .more .achievements .achievement__container { display: flex; justify-content: space-between; }
-  .more .achievements .achievement__container .achievement h3 { font-family: "Paytone One"; font-style: normal; font-weight: 400; font-size: calc( 36px + (56 - 36) * ((100vw - 320px) / (1024 - 320)) ); line-height: 56px; text-align: center; letter-spacing: 1px; color: #ffffff; }
+  .more .achievements .achievement__container .achievement h3 { font-family: "Paytone One"; font-style: normal; font-weight: 400; font-size: calc(36px + (56 - 36) * ((100vw - 320px) / (1024 - 320))); line-height: 56px; text-align: center; letter-spacing: 1px; color: #ffffff; }
   .more .achievements .achievement__container .achievement p { font-family: "Source Sans Pro"; font-style: normal; font-weight: 400; font-size: 16px; line-height: 20px; text-align: center; letter-spacing: 1px; color: #ffffff; margin-top: 11px; } }
 @media (max-width: 425px) { .more { padding-top: calc(10px + (20 - 10) * ((100vw - 320px) / (425 - 320))); }
   .more .achievements .achievement__container { flex-wrap: wrap; } }
@@ -121,5 +121,30 @@ a { text-decoration: none; }
 @media (max-width: 1388px) { .sell { padding: calc(100px + (175 - 100) * ((100vw - 320px) / (1388 - 320))) calc(40px + (112 - 40) * ((100vw - 320px) / (1388 - 320))) calc(60px + (185 - 60) * ((100vw - 320px) / (1388 - 320))) calc(40px + (112 - 40) * ((100vw - 320px) / (1388 - 320))); }
   .sell__cards { flex-direction: column; }
   .sell__card { max-width: 100%; padding-bottom: calc(28px + (4 - 28) * ((100vw - 320px) / (1388 - 320))); } }
+.trend { margin-top: -1px; padding: 0 120px 0 120px; justify-content: space-between; flex-wrap: wrap; }
+
+.trend__header { font-family: 'Paytone One'; font-style: normal; font-weight: 400; font-size: 52px; line-height: 123%; letter-spacing: 1px; color: #FFFFFF; }
+
+.trend__text { font-family: 'Source Sans Pro'; font-style: normal; font-weight: 400; font-size: 20px; line-height: 160%; letter-spacing: 1px; color: #E5E5E5; margin: 18px 6px 96px 6px; max-width: 548px; }
+
+.card-trend { max-width: 548px; }
+
+.card-trend:not(:last-child) { margin-bottom: 99px; }
+
+.card-trend__header { font-family: 'Paytone One'; font-style: normal; font-weight: 400; font-size: 31px; line-height: 142%; letter-spacing: 1px; color: #FFFFFF; }
+
+.card-trend__description { font-family: 'Source Sans Pro'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 125%; letter-spacing: 1px; color: #C4C4C4; display: flex; align-items: center; justify-content: space-between; margin: 7px 0 12px 0; }
+
+.eth { font-family: 'Source Sans Pro'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 125%; letter-spacing: 1px; color: #D400B3; }
+
+.card-trend__img { position: relative; }
+
+.trend-view { position: absolute; bottom: 10%; right: 5%; }
+
+.trend__right { margin: 84px 6px 6px 6px; }
+
+.trend__view { margin-top: 10px; }
+.trend__view p { position: relative; font-family: 'Paytone One'; font-style: normal; font-weight: 400; font-size: 18px; line-height: 111%; text-align: right; letter-spacing: 1px; color: #D400B3; }
+.trend__view p img { position: absolute; top: -26px; left: 329px; }
 
 /*# sourceMappingURL=style.css.map */
