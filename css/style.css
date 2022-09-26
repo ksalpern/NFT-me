@@ -121,7 +121,7 @@ a { text-decoration: none; }
 @media (max-width: 1388px) { .sell { padding: calc(100px + (175 - 100) * ((100vw - 320px) / (1388 - 320))) calc(40px + (112 - 40) * ((100vw - 320px) / (1388 - 320))) calc(60px + (185 - 60) * ((100vw - 320px) / (1388 - 320))) calc(40px + (112 - 40) * ((100vw - 320px) / (1388 - 320))); }
   .sell__cards { flex-direction: column; }
   .sell__card { max-width: 100%; padding-bottom: calc(28px + (4 - 28) * ((100vw - 320px) / (1388 - 320))); } }
-.trend { margin-top: -1px; padding: 0 120px 0 120px; justify-content: space-between; flex-wrap: wrap; }
+.trend { margin-top: -1px; padding: 0 calc(28px + (120 - 28) * ((100vw - 320px) / (1440 - 320))) 0 calc(28px + (120 - 28) * ((100vw - 320px) / (1440 - 320))); justify-content: space-between; flex-wrap: wrap; }
 
 .trend__header { font-family: 'Paytone One'; font-style: normal; font-weight: 400; font-size: 52px; line-height: 123%; letter-spacing: 1px; color: #FFFFFF; }
 
@@ -131,13 +131,13 @@ a { text-decoration: none; }
 
 .card-trend:not(:last-child) { margin-bottom: 99px; }
 
-.card-trend__header { font-family: 'Paytone One'; font-style: normal; font-weight: 400; font-size: 31px; line-height: 142%; letter-spacing: 1px; color: #FFFFFF; }
+.card-trend__header { font-family: 'Paytone One'; font-style: normal; font-weight: 400; font-size: 31px; line-height: 142%; letter-spacing: 1px; color: #FFFFFF; cursor: pointer; }
 
 .card-trend__description { font-family: 'Source Sans Pro'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 125%; letter-spacing: 1px; color: #C4C4C4; display: flex; align-items: center; justify-content: space-between; margin: 7px 0 12px 0; }
 
 .eth { font-family: 'Source Sans Pro'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 125%; letter-spacing: 1px; color: #D400B3; }
 
-.card-trend__img { position: relative; }
+.card-trend__img { position: relative; cursor: pointer; }
 
 .trend-view { position: absolute; bottom: 10%; right: 5%; }
 
@@ -145,6 +145,11 @@ a { text-decoration: none; }
 
 .trend__view { margin-top: 10px; }
 .trend__view p { position: relative; font-family: 'Paytone One'; font-style: normal; font-weight: 400; font-size: 18px; line-height: 111%; text-align: right; letter-spacing: 1px; color: #D400B3; }
-.trend__view p img { position: absolute; top: -26px; left: 329px; }
+.trend__view p img { position: absolute; top: -26px; left: calc(65px + (329 - 65) * ((100vw - 320px) / (1440 - 320))); }
+
+@media (max-width: 1368px) { .trend { justify-content: center; } }
+@media (max-width: 600px) { .card-trend__img { max-width: 550px; }
+  .card-trend__img img { width: 100%; }
+  .card-trend__img .trend-view { width: calc(50px + (80 - 50) * ((100vw - 320px) / (1368 - 320))); } }
 
 /*# sourceMappingURL=style.css.map */
