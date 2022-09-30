@@ -162,13 +162,13 @@ a { text-decoration: none; }
 
 .artists__description { font-family: 'Source Sans Pro'; font-style: normal; font-weight: 400; font-size: 20px; line-height: 160%; letter-spacing: 1px; color: #E5E5E5; max-width: 265px; margin-top: 26px; }
 
-.artists__right { background-color: #0D0D0E; padding: 69px 213px 58px 80px; position: absolute; top: -91px; right: -119px; }
+.artists__right { background-color: #0D0D0E; padding: calc(76px + (69 - 76) * ((100vw - 320px) / (1440 - 320))) calc(0px + (213 - 0) * ((100vw - 320px) / (1440 - 320))) calc(16px + (58 - 16) * ((100vw - 320px) / (1440 - 320))) calc(0px + (80 - 0) * ((100vw - 320px) / (1440 - 320))); position: absolute; top: -91px; right: calc(0px + (-119 - 0) * ((100vw - 320px) / (1440 - 320))); }
 
 .artists__header { font-family: 'Paytone One'; font-style: normal; font-weight: 400; font-size: 52px; line-height: 123%; letter-spacing: 1px; color: #FFFFFF; }
 
-.articts__bottom { display: flex; align-items: center; justify-content: space-between; margin: 160px 0 0 0; }
+.articts__bottom { display: flex; align-items: center; justify-content: space-between; margin: calc(8px + (160 - 8) * ((100vw - 320px) / (1440 - 320))) 0 0 0; flex-wrap: wrap; }
 
-.artist { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.artist { display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 16px 8px 16px 8px; }
 
 .artist__imgs { position: relative; }
 .artist__imgs :last-child { position: absolute; bottom: -15%; right: 50%; }
@@ -176,5 +176,11 @@ a { text-decoration: none; }
 .artist__name { font-family: 'Paytone One'; font-style: normal; font-weight: 400; font-size: 32px; line-height: 138%; letter-spacing: 1px; color: #FFFFFF; margin: 59px 0px 31px 0px; }
 
 .artist__btn { font-family: 'Paytone One'; font-style: normal; font-weight: 400; font-size: 18px; line-height: 111%; text-align: center; letter-spacing: 1px; color: #FFFFFF; background: #D400B3; border: 2px solid #D400B3; border-radius: 1px; padding: 7px 38px 13px 38px; }
+
+@media (max-width: 1015px) { .artists__right { position: relative; background-color: inherit; padding-left: 0; padding-right: 0; }
+  .articts__top { flex-direction: column-reverse; align-items: center; } }
+@media (max-width: 994px) { .articts__bottom { justify-content: center; } }
+@media (max-width: 428px) { .artist__imgs :not(:last-child) { width: calc(280px + (329 - 280) * ((100vw - 320px) / (428 - 320))); }
+  .artist__imgs :last-child { right: 30%; } }
 
 /*# sourceMappingURL=style.css.map */
