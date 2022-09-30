@@ -867,7 +867,7 @@ a {
 .artists {
   background-color: $grayBG;
   margin-top: -1px;
-  padding: calc(50px + (90 - 50) * ((100vw - 320px) / (1440 - 320))) calc(28px + (120 - 28) * ((100vw - 320px) / (1440 - 320))) 0 calc(28px + (120 - 28) * ((100vw - 320px) / (1440 - 320)));
+  padding: calc(50px + (90 - 50) * ((100vw - 320px) / (1440 - 320))) calc(28px + (112 - 28) * ((100vw - 320px) / (1440 - 320))) calc(28px + (160 - 28) * ((100vw - 320px) / (1440 - 320))) calc(28px + (112 - 28) * ((100vw - 320px) / (1440 - 320)));
 }
 
 .articts__top {
@@ -913,7 +913,7 @@ a {
   padding: calc(76px + (69 - 76) * ((100vw - 320px) / (1440 - 320))) calc(0px + (213 - 0) * ((100vw - 320px) / (1440 - 320))) calc(16px + (58 - 16) * ((100vw - 320px) / (1440 - 320))) calc(0px + (80 - 0) * ((100vw - 320px) / (1440 - 320)));
   position: absolute;
   top: -91px;
-  right: calc(0px + (-119 - 0) * ((100vw - 320px) / (1440 - 320)));
+  right: calc(0px + (-112 - 0) * ((100vw - 320px) / (1440 - 320)));
 }
 
 .artists__header {
@@ -948,7 +948,7 @@ a {
   :last-child {
     position: absolute;
     bottom: -15%;
-    right: 50%;
+    right: 37%;
   }
 }
 
@@ -1006,7 +1006,8 @@ a {
     }
 
     :last-child {
-      right: 30%;
+      right: 31%;
+      bottom: -23%;
     }
   }
 }
