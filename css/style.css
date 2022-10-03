@@ -151,7 +151,7 @@ a { text-decoration: none; }
 @media (max-width: 600px) { .card-trend__img { max-width: 550px; }
   .card-trend__img img { width: 100%; }
   .card-trend__img .trend-view { width: calc(50px + (80 - 50) * ((100vw - 320px) / (1368 - 320))); } }
-.artists { background-color: #262627; margin-top: -1px; padding: calc(50px + (90 - 50) * ((100vw - 320px) / (1440 - 320))) calc(28px + (112 - 28) * ((100vw - 320px) / (1440 - 320))) calc(28px + (160 - 28) * ((100vw - 320px) / (1440 - 320))) calc(28px + (112 - 28) * ((100vw - 320px) / (1440 - 320))); }
+.artists { background-color: #262627; margin-top: -2px; padding: calc(50px + (90 - 50) * ((100vw - 320px) / (1440 - 320))) calc(28px + (112 - 28) * ((100vw - 320px) / (1440 - 320))) calc(28px + (160 - 28) * ((100vw - 320px) / (1440 - 320))) calc(28px + (112 - 28) * ((100vw - 320px) / (1440 - 320))); }
 
 .articts__top { display: flex; justify-content: space-between; position: relative; }
 
@@ -182,5 +182,26 @@ a { text-decoration: none; }
 @media (max-width: 994px) { .articts__bottom { justify-content: center; } }
 @media (max-width: 428px) { .artist__imgs :not(:last-child) { width: calc(280px + (329 - 280) * ((100vw - 320px) / (428 - 320))); }
   .artist__imgs :last-child { right: 31%; bottom: -23%; } }
+.best { background-color: #0D0D0E; padding: 175px 0 270px 0; margin-top: -1px; }
+
+.best__top { display: flex; flex-direction: column; justify-content: center; align-items: center; }
+
+.best__header { font-family: 'Paytone One'; font-style: normal; font-weight: 400; font-size: 52px; line-height: 123%; text-align: center; letter-spacing: 1px; color: #FFFFFF; }
+
+.best__text { font-family: 'Source Sans Pro'; font-style: normal; font-weight: 400; font-size: 20px; line-height: 160%; text-align: center; letter-spacing: 1px; color: #E5E5E5; max-width: 591px; margin: 18px 0 67px 0; }
+
+.best__bottom { position: relative; min-height: 275px; }
+
+.best__client { position: absolute; background: rgba(196, 196, 196, 0.2); border: 1px solid rgba(229, 229, 229, 0.3); border-radius: 1px; padding: 49px 109px; }
+
+.foxhub { top: -2%; left: 19%; padding-top: 44px; padding-bottom: 44px; }
+
+.hexlab { top: -2%; right: 17%; padding-top: 41px; padding-bottom: 41px; }
+
+.lightai { top: 27%; right: 37%; padding: 0px; background: none; border: none; }
+
+.nirastate { bottom: -1%; left: 19%; padding-top: 48px; padding-bottom: 47px; }
+
+.zootv { bottom: -2%; right: 17%; padding-top: 41px; padding-bottom: 41px; }
 
 /*# sourceMappingURL=style.css.map */

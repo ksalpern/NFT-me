@@ -866,7 +866,7 @@ a {
 
 .artists {
   background-color: $grayBG;
-  margin-top: -1px;
+  margin-top: -2px;
   padding: calc(50px + (90 - 50) * ((100vw - 320px) / (1440 - 320))) calc(28px + (112 - 28) * ((100vw - 320px) / (1440 - 320))) calc(28px + (160 - 28) * ((100vw - 320px) / (1440 - 320))) calc(28px + (112 - 28) * ((100vw - 320px) / (1440 - 320)));
 }
 
@@ -1010,6 +1010,95 @@ a {
       bottom: -23%;
     }
   }
+}
+
+//best section
+
+.best {
+  background-color: $blackBG;
+  padding: 175px 0 270px 0;
+  margin-top: -1px;
+}
+
+.best__top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.best__header {
+  font-family: 'Paytone One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 123%;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+
+.best__text {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #E5E5E5;
+  max-width: 591px;
+  margin: 18px 0 67px 0;
+}
+
+.best__bottom {
+  position: relative;
+  min-height: 275px;
+}
+
+.best__client {
+  position: absolute;
+  background: rgba(196, 196, 196, 0.2);
+  border: 1px solid rgba(229, 229, 229, 0.3);
+  border-radius: 1px;
+  padding: 49px 109px;
+
+}
+
+.foxhub {
+  top: -2%;
+  left: 19%;
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+.hexlab {
+  top: -2%;
+  right: 17%;
+  padding-top: 41px;
+  padding-bottom: 41px;
+}
+
+.lightai {
+  top: 27%;
+  right: 37%;
+  padding: 0px;
+  background: none;
+  border: none;
+}
+
+.nirastate {
+  bottom: -1%;
+  left: 19%;
+  padding-top: 48px;
+  padding-bottom: 47px;
+}
+
+.zootv {
+  bottom: -2%;
+    right: 17%;
+    padding-top: 41px;
+    padding-bottom: 41px;
 }
 
 // footer
