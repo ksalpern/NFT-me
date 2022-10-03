@@ -182,26 +182,29 @@ a { text-decoration: none; }
 @media (max-width: 994px) { .articts__bottom { justify-content: center; } }
 @media (max-width: 428px) { .artist__imgs :not(:last-child) { width: calc(280px + (329 - 280) * ((100vw - 320px) / (428 - 320))); }
   .artist__imgs :last-child { right: 31%; bottom: -23%; } }
-.best { background-color: #0D0D0E; padding: 175px 0 270px 0; margin-top: -1px; }
+.best { background-color: #0D0D0E; padding: calc(60px + (175 - 60) * ((100vw - 320px) / (1440 - 320))) 0 calc(90px + (270 - 90) * ((100vw - 320px) / (1440 - 320))) 0; margin-top: -1px; }
 
 .best__top { display: flex; flex-direction: column; justify-content: center; align-items: center; }
 
-.best__header { font-family: 'Paytone One'; font-style: normal; font-weight: 400; font-size: 52px; line-height: 123%; text-align: center; letter-spacing: 1px; color: #FFFFFF; }
+.best__header { font-family: 'Paytone One'; font-style: normal; font-weight: 400; font-size: 52px; line-height: 123%; text-align: center; letter-spacing: 1px; color: #FFFFFF; margin: 0 16px; }
 
-.best__text { font-family: 'Source Sans Pro'; font-style: normal; font-weight: 400; font-size: 20px; line-height: 160%; text-align: center; letter-spacing: 1px; color: #E5E5E5; max-width: 591px; margin: 18px 0 67px 0; }
+.best__text { font-family: 'Source Sans Pro'; font-style: normal; font-weight: 400; font-size: 20px; line-height: 160%; text-align: center; letter-spacing: 1px; color: #E5E5E5; max-width: 591px; margin: 18px 16px 67px 16px; }
 
-.best__bottom { position: relative; min-height: 275px; }
+.best__bottom { position: relative; min-height: 275px; display: flex; flex-wrap: wrap; justify-content: space-between; padding: 0 calc(20px + (264 - 20) * ((100vw - 320px) / (1440 - 320))); gap: 35px; }
 
-.best__client { position: absolute; background: rgba(196, 196, 196, 0.2); border: 1px solid rgba(229, 229, 229, 0.3); border-radius: 1px; padding: 49px 109px; }
+.best__client { background: rgba(196, 196, 196, 0.2); border: 1px solid rgba(229, 229, 229, 0.3); border-radius: 1px; padding: 49px calc(40px + (109 - 40) * ((100vw - 320px) / (1440 - 320))); margin: 0 auto; }
 
-.foxhub { top: -2%; left: 19%; padding-top: 44px; padding-bottom: 44px; }
+.foxhub { padding-top: calc(25px + (44 - 25) * ((100vw - 320px) / (1440 - 320))); padding-bottom: calc(25px + (44 - 25) * ((100vw - 320px) / (1440 - 320))); }
 
-.hexlab { top: -2%; right: 17%; padding-top: 41px; padding-bottom: 41px; }
+.hexlab { padding-top: calc(23px + (41 - 23) * ((100vw - 320px) / (1440 - 320))); padding-bottom: calc(23px + (41 - 23) * ((100vw - 320px) / (1440 - 320))); }
 
-.lightai { top: 27%; right: 37%; padding: 0px; background: none; border: none; }
+.lightai { top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 0px; background: none; border: none; position: absolute; }
+.lightai img { width: calc(200px + (341 - 200) * ((100vw - 320px) / (1440 - 320))); }
 
-.nirastate { bottom: -1%; left: 19%; padding-top: 48px; padding-bottom: 47px; }
+.nirastate { padding-top: calc(27px + (48 - 27) * ((100vw - 320px) / (1440 - 320))); padding-bottom: calc(27px + (47 - 27) * ((100vw - 320px) / (1440 - 320))); }
 
-.zootv { bottom: -2%; right: 17%; padding-top: 41px; padding-bottom: 41px; }
+.zootv { padding-top: calc(23px + (41 - 23) * ((100vw - 320px) / (1440 - 320))); padding-bottom: calc(23px + (41 - 23) * ((100vw - 320px) / (1440 - 320))); }
+
+@media (max-width: 1356px) { .lightai { position: relative; top: initial; left: initial; transform: initial; } }
 
 /*# sourceMappingURL=style.css.map */
