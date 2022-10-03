@@ -646,7 +646,7 @@ a {
     font-family: "Paytone One";
     font-style: normal;
     font-weight: 400;
-    font-size: 52px;
+    font-size: calc(42px + (52 - 42) * ((100vw - 320px) / (1440 - 320)));
     line-height: 64px;
     /* identical to box height, or 123% */
     text-align: center;
@@ -739,7 +739,7 @@ a {
   font-family: 'Paytone One';
   font-style: normal;
   font-weight: 400;
-  font-size: 52px;
+  font-size: calc(42px + (52 - 42) * ((100vw - 320px) / (1440 - 320)));
   line-height: 123%;
   letter-spacing: 1px;
   color: #FFFFFF;
@@ -920,7 +920,7 @@ a {
   font-family: 'Paytone One';
   font-style: normal;
   font-weight: 400;
-  font-size: 52px;
+  font-size: calc(42px + (52 - 42) * ((100vw - 320px) / (1440 - 320)));
   line-height: 123%;
   letter-spacing: 1px;
   color: #FFFFFF;
@@ -1031,7 +1031,7 @@ a {
   font-family: 'Paytone One';
   font-style: normal;
   font-weight: 400;
-  font-size: 52px;
+  font-size: calc(42px + (52 - 42) * ((100vw - 320px) / (1440 - 320)));
   line-height: 123%;
   text-align: center;
   letter-spacing: 1px;
@@ -1113,9 +1113,94 @@ a {
   }
 }
 
-// @media (max-width:1137px) {
+// drop section
+.drop {
+  margin-top: -1px;
+  padding-left: calc(30px + (120 - 30) * ((100vw - 760px) / (1440 - 760)));
+  padding-right: calc(30px + (120 - 30) * ((100vw - 760px) / (1440 - 760)));
+  background: $blackBG;
+}
 
-//  }
+.drop__container {
+  position: relative;
+  background-color: $grayBG;
+  padding: 195px 0px 95px 0px;
+  border-bottom: 5px solid #D400B3;
+  max-width: 1200px;
+  max-height: 523px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.drop__img {
+  top: 0%;
+  left: 52%;
+  transform: translate(-50%, -78%);
+  position: absolute;
+
+  img {
+    width: calc(220px + (555 - 220) * ((100vw - 320px) / (1440 - 320)));
+  }
+
+}
+
+.drop__header {
+  font-family: 'Paytone One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(42px + (52 - 42) * ((100vw - 320px) / (1440 - 320)));
+  line-height: 123%;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  margin: 0px 12px 0px 12px;
+}
+
+.drop__text {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #E5E5E5;
+  margin: 18px 12px 37px 12px;
+  max-width: 591px;
+}
+
+.drop__search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  input {
+    background: rgba(196, 196, 196, 0.1);
+    width: calc(308px + (456 - 308) * ((100vw - 760px) / (1440 - 760)));
+    height: calc(46px + (50 - 46) * ((100vw - 760px) / (1440 - 760)));
+    cursor: pointer;
+  }
+
+  button {
+    background: #D400B3;
+    border: 2px solid #D400B3;
+    border-radius: 1px;
+    width: calc(100px + (144 - 100) * ((100vw - 760px) / (1440 - 760)));
+    height: calc(47px + (51 - 47) * ((100vw - 760px) / (1440 - 760)));
+  }
+}
+
+@media (max-width:746px) {
+  .drop__img {
+    top: 17%;
+    left: 49%;
+    transform: translate(-50%, -78%);
+    position: absolute;
+  }
+
+}
 
 // footer
 .footer {}
