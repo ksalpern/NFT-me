@@ -1216,7 +1216,6 @@ a {
   padding-right: calc(30px + (120 - 30) * ((100vw - 320px) / (1440 - 320)));
   padding-bottom: calc(20px + (30 - 20) * ((100vw - 320px) / (1440 - 320)));
   border-bottom: 1px solid rgba(229, 229, 229, 0.3);
-  ;
   background: $blackBG;
   margin-top: -1px;
   display: flex;
@@ -1286,4 +1285,30 @@ a {
 }
 
 // footer
-.footer {}
+.footer {
+  background-color: $blackBG;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  margin-top: -1px;
+
+  p {
+    margin-right: 3px;
+    margin-bottom: 6px;
+  }
+
+  a {
+    margin-right: 3px;
+    margin-bottom: 6px;
+  }
+}
